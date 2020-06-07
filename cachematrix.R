@@ -1,3 +1,7 @@
+## OVerall it is a pair of functions that cache the inverse of the matrix
+
+## This function defined below creates a special "matrix" object that can cache its inverse.
+
 makeCacheMatrix<- function(x =matrix()) {
   inv <- NULL
   set <- function(y){
@@ -11,6 +15,11 @@ makeCacheMatrix<- function(x =matrix()) {
        getinv = getinv)
 }
 
+
+## This function computes the inverse of the special "matrix" returned by 
+##makeCacheMatrix above. If the inverse has already been calculated (and the matrix 
+##has not changed), then the cachesolve should retrieve the inverse from the cache.
+
 cacheSolve <- function (x, ...){
   inv <- x$getinv()
   if(!is.null(inv)){
@@ -23,4 +32,4 @@ cacheSolve <- function (x, ...){
   inv
   
 }
-
+}
