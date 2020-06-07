@@ -1,4 +1,4 @@
-## OVerall it is a pair of functions that cache the inverse of the matrix
+## OVerall this file has is a pair of functions that cache the inverse of the matrix
 
 ## This function defined below creates a special "matrix" object that can cache its inverse.
 
